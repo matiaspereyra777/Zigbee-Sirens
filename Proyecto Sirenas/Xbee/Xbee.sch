@@ -477,7 +477,7 @@ L Connector:Screw_Terminal_01x02 J?
 U 1 1 5C1ACBCC
 P 9150 4300
 F 0 "J?" H 9229 4292 50  0000 L CNN
-F 1 "Entrada" H 9229 4201 50  0000 L CNN
+F 1 "Entrada" H 9050 4100 50  0000 L CNN
 F 2 "" H 9150 4300 50  0001 C CNN
 F 3 "~" H 9150 4300 50  0001 C CNN
 	1    9150 4300
@@ -1032,7 +1032,7 @@ Wire Wire Line
 	10400 4400 10400 4550
 Connection ~ 10100 4400
 Wire Wire Line
-	9100 5150 9900 5150
+	9100 5150 9450 5150
 Wire Wire Line
 	9100 5550 9100 5600
 $Comp
@@ -1167,4 +1167,25 @@ DIO3
 Text Label 5800 5600 0    50   ~ 0
 DIO3
 NoConn ~ 5800 5900
+$Comp
+L Diode:1N4007 D?
+U 1 1 5C1AA185
+P 9450 4850
+F 0 "D?" V 9404 4929 50  0000 L CNN
+F 1 "1N4007" V 9495 4929 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9450 4675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9450 4850 50  0001 C CNN
+	1    9450 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 4700 9450 4400
+Wire Wire Line
+	9450 4400 9900 4400
+Connection ~ 9900 4400
+Wire Wire Line
+	9450 5000 9450 5150
+Connection ~ 9450 5150
+Wire Wire Line
+	9450 5150 9900 5150
 $EndSCHEMATC
