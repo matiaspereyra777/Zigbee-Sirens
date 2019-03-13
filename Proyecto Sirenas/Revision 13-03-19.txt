@@ -1,0 +1,2 @@
+-Conector Raspberry: agregar dos pines, uno de la entrada y otro a la base del transistor de salida
+-Transistor de salida de Rele: agregar pulldown
